@@ -1,4 +1,5 @@
 # CODECHEF-submission
+##updating daily
 
 A collection of my daily CodeChef problem solutions and competitive programming practice.
 
