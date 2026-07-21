@@ -1,5 +1,7 @@
 # Buy1-Get1
-##https://www.codechef.com/practice/course/1-star-difficulty-problems/DIFF1200/problems/BUY1GET1?tab=Submissions
+## https://www.codechef.com/practice/course/1-star-difficulty-problems/DIFF1200/problems/BUY1GET1?tab=Submissions
+
+
 One day Alice visited Byteland to purchase jewels for her upcoming wedding anniversary.
 
 In Byteland, every Jewelry shop has their own discount methods to attract the customers. One discount method called **Buy1-Get1** caught Alice's attention. That is, Alice buys one jewel, then she can get one additional jewel with the same color without charge by Buy1-Get1.
