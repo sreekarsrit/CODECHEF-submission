@@ -1,60 +1,18 @@
-## Code Implementation Explanation
+## Observations
 
-The solution defines a helper function to simulate a single ATM withdrawal:
-
-```python
-def atm_available(balance, num):
-```
-
-Inside the function, it checks whether the ATM has enough balance:
-
-```python
-if balance >= num:
-```
-
-If sufficient money is available, the requested amount is deducted from the balance and the function returns:
-
-```python
-return 1, balance
-```
-
-Here, `1` indicates a successful withdrawal, along with the updated balance.
-
-If the balance is insufficient, the balance remains unchanged and the function returns:
-
-```python
-return 0, balance
-```
-
-For each test case, the ATM balance is initialized with the given value:
-
-```python
-balance = total
-```
-
-The code then processes each withdrawal request one by one:
-
-```python
-for i in arr:
-```
-
-For every request, the helper function is called:
-
-```python
-res, balance = atm_available(balance, i)
-```
-
-The returned result (`1` or `0`) is converted to a string and stored in a list:
-
-```python
-list1.append(str(res))
-```
-
-After processing all people, the list of results is joined into a single binary string:
-
-```python
-print("".join(list1))
-```
+- The Buy1-Get1 offer applies **independently for each jewel color**.
+- Jewels of different colors cannot be paired together.
+- For a color appearing `f` times:
+  - Every pair of jewels requires paying for only one jewel.
+  - Therefore, the minimum cost for that color is:
+    ```text
+    ceil(f / 2)
+    ```
+- This can be computed as:
+  - `f // 2` if `f` is even.
+  - `(f // 2) + 1` if `f` is odd.
+- Count the frequency of every character in the string, compute the minimum cost for each color separately, and sum the costs.
+- Key Insight: Treat each color independently and pay for only half of its occurrences (rounded up), since every purchased jewel can provide one free jewel of the same color.
 
 ```python
 # cook your dish here
